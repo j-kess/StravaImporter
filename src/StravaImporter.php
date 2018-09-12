@@ -156,7 +156,8 @@ class StravaImporter {
                 'elapsed_time'     => $activity->time * 60,             //minutes to seconds
                 'distance'         => $activity->distance * 1609.34,    //miles to meters
                 'private'          => 1
-                'total_elevation_gain' ==> $activity->elevation * 0.3048       //feet to meters
+                'trainer'          => $activity->trainer
+                'total_elevation_gain' => $activity->elevation * 0.3048       //feet to meters
             ]);
 
             //TODO: check if any activity was not uploaded
