@@ -165,7 +165,7 @@ class StravaImporter {
 
         return (object)[
             'status' => true,
-            'message' => 'Activity uploaded yay'
+            'message' => 'Activity uploaded hurray.'
         ];
     }
 
