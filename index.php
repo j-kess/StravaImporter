@@ -61,6 +61,8 @@ if ($authorized and !empty($_POST) and !empty($_FILES)) {
                                 <li><b>date</b> : Date in ISO 8601 (ie: 2016-11-11T11:07:59Z)</li>
                                 <li><b>distance</b> : Distance (miles)</li>
                                 <li><b>time</b> : Time (minutes)</li>
+                                <li><b>type</b> : Type (Run, Ride, Hike, etc.)</li>
+                                <li><b>elevation</b> : Elevation (feet)</li>
                             </ul>
                             Attach the file and click on Submit.
                         </p>
@@ -92,7 +94,7 @@ if ($authorized and !empty($_POST) and !empty($_FILES)) {
                     <hr>
                     <?php if ($res->status): ?>
                         <div class="alert alert-success">
-                            Activities uploaded.
+                            Activities uploaded!
                         </div>
                     <?php else: ?>
                         <div class="alert alert-danger">
