@@ -155,7 +155,7 @@ class StravaImporter {
                 'start_date_local' => $activity->date,                  //ISO 8601: 2016-11-11T11:07:59Z
                 'elapsed_time'     => $activity->time * 60,             //minutes to seconds
                 'distance'         => $activity->distance * 1609.34,    //miles to meters
-                'elevation_gain'        => $activity->elevation * 0.3048,       //feet to meters
+                'elev_gain'        => $activity->elevation * 0.3048,    //feet to meters
                 'trainer'          => $activity->trainer,
             ]);
 
