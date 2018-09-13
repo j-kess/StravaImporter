@@ -153,9 +153,9 @@ class StravaImporter {
                 'name'             => $activity->name,
                 'type'             => $activity->type,
                 'start_date_local' => $activity->date,                  //ISO 8601: 2016-11-11T11:07:59Z
-                'elapsed_time'     => $activity->90,             //minutes to seconds
+                'elapsed_time'     => $activity->time,             //minutes to seconds
                 'distance'         => $activity->distance * 1609.34,    //miles to meters
-                //'elev_gain'        => $activity->time * 0.3048,       //feet to meters
+                'elev_gain'        => $activity->elevation * 0.3048,       //feet to meters
                 'trainer'          => $activity->trainer,
             ]);
 
@@ -165,7 +165,7 @@ class StravaImporter {
 
         return (object)[
             'status' => true,
-            'message' => 'Activity uploaded'
+            'message' => 'Activity uploaded yay'
         ];
     }
 
